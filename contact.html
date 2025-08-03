@@ -31,19 +31,18 @@
       <li>LinkedIn: <a href="https://linkedin.com/in/akshara-mahesh-kumar-bb9099295" target="_blank">akshara-mahesh-kumar-bb9099295</a></li>
     </ul>
 
-    <h3>Or use this simple contact form look:</h3>
-    <form>
-      <label>Name:</label><br>
-      <input type="text" placeholder="Your name"><br><br>
+  <h3>Send me a message:</h3>
+<form action="https://formspree.io/f/meozlveo" method="POST">
+  <label>Name:</label><br>
+  <input type="text" name="name" placeholder="Your name" required><br><br>
 
-      <label>Email:</label><br>
-      <input type="email" placeholder="Your email"><br><br>
+  <label>Email:</label><br>
+  <input type="email" name="email" placeholder="Your email" required><br><br>
 
-      <label>Message:</label><br>
-      <textarea rows="5" placeholder="Type your message here..."></textarea><br><br>
+  <label>Message:</label><br>
+  <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea><br><br>
 
-      <button type="submit" disabled>Send (Coming Soon)</button>
-    </form>
-  </main>
-</body>
-</html>
+  <button type="submit">Send Message</button>
+  <input type="hidden" name="_next" value="https://yourdomain.com/Your response has been recorded.html">
+
+</form>
